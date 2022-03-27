@@ -11,8 +11,8 @@ export class User {
   nickName: string;
   @Prop()
   password: string;
-  @Prop({default: Date.now()})
+  @Prop({ default: Date.now() })
   date_added: Date;
 }
 
-export const UserSchema = SchemaFactory.createForClass(User)
+export const UserSchema = SchemaFactory.createForClass(User);
